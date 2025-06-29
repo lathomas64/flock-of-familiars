@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://i6uoerlnxujv"]
+
+[ext_resource type="Script" path="res://src/Map.cs" id="1_qe3hn"]
+[ext_resource type="PackedScene" uid="uid://b7hvtmsijouvc" path="res://scenes/hex.tscn" id="2_51cql"]
+
+[node name="Map" type="Node2D"]
+script = ExtResource("1_qe3hn")
+
+[node name="Hex" parent="." instance=ExtResource("2_51cql")]
+position = Vector2(461, 256)
+
+[node name="Hex2" parent="." instance=ExtResource("2_51cql")]
+position = Vector2(536, 299)
